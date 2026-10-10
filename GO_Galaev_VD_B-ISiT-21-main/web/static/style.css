@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: #eee;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    padding: 6px;
+    margin-top: 4px;
+}
+
+footer {
+    margin-top: 30px;
+    color: #777;
+    font-size: 14px;
+}

@@ -1,0 +1,27 @@
+{{define "layout"}}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}} — Трекер расходов</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Трекер расходов</h1>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/expenses">Траты</a>
+            <a href="/expenses/add">Добавить трату</a>
+            <a href="/about">О проекте</a>
+        </nav>
+    </header>
+
+    <main>
+        {{block "content" .}}{{end}}
+    </main>
+
+    <footer>Учебный проект на Go</footer>
+</body>
+</html>
+{{end}}

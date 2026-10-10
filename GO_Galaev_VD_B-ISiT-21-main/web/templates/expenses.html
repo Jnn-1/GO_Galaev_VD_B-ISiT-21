@@ -1,0 +1,24 @@
+{{define "content"}}
+<h2>Список трат</h2>
+
+{{if .Expenses}}
+<table>
+    <tr>
+        <th>Дата</th>
+        <th>Описание</th>
+        <th>Сумма</th>
+    </tr>
+    {{range .Expenses}}
+    <tr>
+        <td>{{.Date}}</td>
+        <td>{{.Description}}</td>
+        <td>{{printf "%.2f" .Amount}}</td>
+    </tr>
+    {{end}}
+</table>
+{{else}}
+<p>Трат пока нет.</p>
+{{end}}
+
+<p><a href="/expenses/add">Добавить трату</a></p>
+{{end}}
